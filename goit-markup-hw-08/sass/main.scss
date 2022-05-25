@@ -1,0 +1,18 @@
+// Utils
+@import "./utils/normalize";
+@import "./utils/breakpoints";
+
+// Variables
+@import "./utils/variables";
+@import "./utils/styles";
+
+// Components
+@import "./components/header";
+@import "./components/main-hero";
+@import "./components/modal";
+@import "./components/main-directions";
+@import "./components/main-advantages";
+@import "./components/main-team";
+@import "./components/main-customers";
+@import "./components/portfolio";
+@import "./components/footer";
