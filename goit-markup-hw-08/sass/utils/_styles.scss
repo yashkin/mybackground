@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-bg-color;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mobil;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobil) {
+    max-width: $mobil;
+  }
+
+  @media screen and (min-width: $table) {
+    max-width: $table;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
+
+.big-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: $font-family;
+  font-weight: bold;
+
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $title-font-size;
+    line-height: 42px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+  justify-content: space-between;
+  background-color: $accent-color;
+  color: $light-color;
+  width: 196px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    border: 0px;
+    outline: 1px solid $accent-color;
+  }
+}

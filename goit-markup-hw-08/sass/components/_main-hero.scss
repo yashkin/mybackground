@@ -1,0 +1,102 @@
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/mob-hero-img-480-400.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .container {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+  }
+  .title {
+    visibility: visible;
+    max-width: 360px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-color;
+  }
+  .button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 1dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/mob-hero-img-480-400@2x.jpg");
+  }
+}
+
+@media screen and (min-width: $table) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/tabl-hero-img-768-400.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/tabl-hero-img-768-400@2x.jpg");
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/desk-hero-img-1600-600.jpg");
+    .container {
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      .title {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 60px;
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/desk-hero-img-1600-600@2x.jpg");
+    }
+  }
+}
