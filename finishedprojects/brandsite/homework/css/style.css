@@ -1,0 +1,223 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+h3 {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+.symbol {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-size: 60px;
+}
+
+.quote {
+  font-family: inherit;
+  color: #fff;
+  text-align: center;
+}
+
+.header-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  background-image: url("../img/apples.jpg");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .link {
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-family: inherit;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 485px;
+}
+
+.menu-nav .item + .item {
+  margin-left: 30px;
+}
+
+.menu-nav .item:last-child {
+  margin-right: 20px;
+}
+
+.btn {
+  display: block;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 220px;
+  height: 40px;
+  padding: 2px 32px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #000;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.first {
+  margin-left: 30px;
+}
+
+.first,
+.second {
+  width: 50%;
+  text-align: left;
+}
+
+.articles-wrapper {
+  background-color: #e8e8e8;
+}
+
+.sample {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sample:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+img {
+  display: block;
+  width: 600px;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.article-text {
+  text-align: center;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.mailing {
+  height: 75px;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe {
+  margin-left: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.btn-mail {
+  margin-right: 20px;
+  height: 50px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #000;
+}
+
+.mail-input {
+  display: inline-block;
+  width: 650px;
+  height: 50px;
+  border: 1px solid black;
+}
