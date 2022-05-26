@@ -1,0 +1,106 @@
+@media print {
+  .tm-content-box:not(.flex-2-col):not(.tm-content-header),
+  .tm-sidebar .tm-main-nav,
+  .blocks,
+  section::before {
+    display: none;
+  }
+}
+
+section p::first-letter {
+  font-size: 30px;
+  color: #87cefa;
+}
+
+.active h2 {
+  color: #dcdcdc;
+  letter-spacing: 5px;
+}
+
+tm-content-box div ol li:nth-child(1)::after,
+.tm-content-box div ol li:nth-child(3)::after {
+  content: "New";
+  color: red;
+  vertical-align: top;
+  font-size: 11px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.tm-section-description:nth-child(2) {
+  font-style: italic;
+}
+
+.tm-sidebar,
+.heading ~ .blocks > .tm-team-description-container,
+.tm-content-box {
+  box-shadow: 0 0 5px 2px rgb(197, 197, 197);
+}
+
+.tm-content-box div ol li:nth-child(1)::after,
+.tm-content-box div ol li:nth-child(3)::after {
+  content: "New";
+  color: red;
+  vertical-align: top;
+  font-size: 11px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.tm-team-description-container ~ .tm-content-box {
+  box-shadow: none;
+}
+
+.tm-section-description::first-letter {
+  line-height: 0;
+}
+
+.box-work:nth-child(even) {
+  background-color: #c9c9c9;
+}
+
+.tm-team-description-container ~ .tm-content-box:last-child {
+  box-shadow: 0 0 5px 2px rgb(197, 197, 197);
+}
+
+.tm-banner {
+  background-color: #808080;
+}
+
+.tm-banner-inner {
+  background-color: #ffffff;
+}
+
+section::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top: 0 solid transparent;
+  border-left: 225px solid #88cef9;
+}
+
+.flex-2-col div:before {
+  display: none;
+}
+
+.heading a:visited {
+  text-decoration: underline;
+}
+
+.text:after {
+  content: "New";
+  font-size: 10px;
+  color: #ff0000;
+  position: absolute;
+}
+
+.mandatory-field::after {
+  content: "*";
+  color: red;
+}
+
+.heading a:hover {
+  text-decoration: none;
+}
